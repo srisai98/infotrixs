@@ -1,0 +1,312 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+  }
+
+  :root {
+    --main--color: #008148;
+    --second--color: #0f4b21;
+  }
+
+
+  /* Navigation bar styles */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+  }
+
+  .logo img {
+    
+    width: 20px;
+    height: auto;
+    background-image: black;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .search-bar {
+    margin-right:-30px; 
+    display: right;
+    align-items: center;
+  }
+
+  .search-bar input[type="text"] {
+    padding:  5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .search-bar button {
+    padding: 5px 5px;
+    color: #0f0d0d;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+
+  .navbar {
+    display: flex;
+  }
+
+  .navbar li {
+    margin-right: 20px;
+  }
+  .navbar a img {
+    width: 18px; 
+    height: 15px;
+    margin-right: 5px; 
+    vertical-align: middle;
+  }
+
+
+  .navbar a {
+    
+    
+    font-size: 1rem;
+    padding: 15px 15px;
+    color: var(--second--color);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    
+  }
+
+  .navbar a:hover {
+    color: var(--main--color--);
+  }
+
+  #menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+  }
+
+  /* Home section styles */
+  .home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background:url('./pic/alex-brinkman-d4uPQo9EPE8-unsplash.jpg') center/cover; /* Center and cover the background image */
+    gap: 1rem;
+  }
+
+  .home .content {
+    flex: 1 1 17rem;
+    text-align: left;
+  }
+
+  .home img {
+    flex: 1 1 17rem;
+    animation: animate 3s linear infinite;
+  }
+
+  .home h1 {
+    font-size: 1rem;
+    font-weight: 200 ;
+    color: rgb(54, 33, 33);
+    text-align: justify; 
+    text-transform: capitalize;
+    margin:0.5rem 0 1.4rem ;
+    font-size: large;
+  }
+
+  .home p {
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: rgb(0, 69, 45);
+    text-transform: capitalize;
+    margin: 0.5rem 0 1.4rem;
+    text-align: left; 
+  }
+
+  .home button {
+    padding: 7px 16px;
+    border: 2px solid var(--second--color);
+    border-radius: 480px;
+    color: var(--second--color);
+    font-weight: 500;
+  }
+
+  .home button:hover {
+    color: #fff;
+    background: var(--second--color);
+  }
+  .star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 2rem; 
+  }
+
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+
+  .star-rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+    margin-right: 5px;
+  }
+
+  .star-rating label:hover,
+  .star-rating input[type="radio"]:checked + label {
+    color: #ffcc00; 
+  }
+
+  .star-h3 {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .star-h3 h3 {
+    font-size: 1rem;
+    color: var(--main--color); 
+  }
+
+  .heading{
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color:var(--second--color);
+
+  }
+  .heading h1{
+    font-size: 2rem;
+    color: var(--main--color);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+
+
+  .container .box {
+    flex: 1 1 calc(33.3333% - 1rem); 
+    background: #fff; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+  }
+
+  .container .box:hover {
+    transform: translateY(-80px); 
+  }
+
+  .container .box .box-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .container .box h2 {
+    font-size: 1.5rem; 
+    margin-top: 1rem;
+    color: var(--main--color); 
+  }
+
+  .container .box .btn {
+    margin-top: 1rem;
+    background: var(--main--color); 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition:  0.2s; 
+    background: ease-in-out;
+  }
+
+  .container .box .btn:hover {
+    background: var(--second--color); 
+  }
+  /* Style for social media section */
+  .social-media {
+    display: flex; 
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px; 
+    margin-top: 20px;
+  }
+
+  /* Style for social media logos */
+  .social-media-logo {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 45%; 
+    background-color: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0 20px; 
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Change logo background color to main color and text color to white on hover */
+  .social-media-logo:hover {
+    background-color:rgba(117, 223, 252, 0.804);
+    color: #e91313; 
+  }
+
+  /* Style for logo images */
+  .social-media-logo img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
+    
+  }
+
+  /* Media query for responsiveness (adjust as needed) */
+  @media (max-width: 768px) {
+    .social-media-logo {
+        width: 50px; 
+        height: 50px;
+    }
+  }
