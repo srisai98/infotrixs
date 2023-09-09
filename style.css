@@ -110,7 +110,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: url('./alex-brinkman-d4uPQo9EPE8-unsplash.jpg') center/cover; / /* Center and cover the background image */
+    background:url('./alex-brinkman-d4uPQo9EPE8-unsplash.jpg') center/cover; / /* Center and cover the background image */
     gap: 1rem;
   }
 
